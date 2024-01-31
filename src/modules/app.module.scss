@@ -1,0 +1,119 @@
+.app-center {
+
+    @media only screen and (max-width:480px){
+        padding: 0px 50px;
+    }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: 800;
+      span {
+        color: hsl(223, 87%, 63%);
+        margin-left: -5px;
+      }
+    }
+
+    .subscribe {
+      font-size: 18px;
+    }
+
+    .input-div {
+      @media only screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+      }
+      input,
+      button {
+        margin: 0px 10px;
+      }
+
+      p {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: hsl(354, 100%, 66%);
+      }
+
+      input {
+        width: 320px;
+        height: 50px;
+        border-radius: 30px;
+        border: 1px solid hsl(0, 0%, 59%);
+        outline: none;
+        padding-left: 30px;
+      }
+
+      button {
+        border: none;
+        border-radius: 30px;
+        background-color: hsl(223, 87%, 63%);
+        color: white;
+        width: 160px;
+        font-size: 15px;
+        font-weight: 600;
+        height: 50px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 0 5px 15px hsl(223, 87%, 53%, 0.3);
+      }
+    }
+
+    .launching {
+      color: hsl(0, 0%, 59%);
+      font-size: 40px;
+      font-weight: 400;
+      span {
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+    img {
+      height: 400px;
+      outline: none;
+      margin: 50px 0px;
+      @media only screen and (max-width:480px){
+        width: 480px;
+      }
+    }
+
+    img::selection {
+      background-color: transparent;
+    }
+
+    .icon-box svg {
+      margin: 0px 10px;
+      width: 20px;
+      height: 20px;
+      color: hsl(223, 100%, 68%);
+      margin-bottom: 20px;
+    }
+
+    .copyright {
+      color: hsl(0, 0%, 59%);
+      font-size: 13px;
+    }
+  }
+}
+
+.red {
+  border: 1px solid hsl(354, 100%, 66%) !important;
+}
